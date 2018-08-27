@@ -35,12 +35,10 @@ public:
     {
         if (TrainWidget->objectName().isEmpty())
             TrainWidget->setObjectName(QStringLiteral("TrainWidget"));
-        TrainWidget->resize(650, 600);
-        TrainWidget->setMinimumSize(QSize(650, 600));
-        TrainWidget->setMaximumSize(QSize(650, 600));
+        TrainWidget->resize(1466, 872);
         label = new QLabel(TrainWidget);
         label->setObjectName(QStringLiteral("label"));
-        label->setGeometry(QRect(270, 10, 231, 41));
+        label->setGeometry(QRect(490, 20, 231, 41));
         QFont font;
         font.setFamily(QStringLiteral("ADMUI3Lg"));
         font.setPointSize(24);
@@ -49,30 +47,30 @@ public:
         label->setFont(font);
         label_2 = new QLabel(TrainWidget);
         label_2->setObjectName(QStringLiteral("label_2"));
-        label_2->setGeometry(QRect(30, 70, 101, 21));
+        label_2->setGeometry(QRect(1080, 10, 101, 21));
         QFont font1;
         font1.setPointSize(12);
         label_2->setFont(font1);
         lineUserName = new QLineEdit(TrainWidget);
         lineUserName->setObjectName(QStringLiteral("lineUserName"));
         lineUserName->setEnabled(false);
-        lineUserName->setGeometry(QRect(130, 70, 221, 31));
+        lineUserName->setGeometry(QRect(1180, 10, 221, 31));
         QFont font2;
         font2.setFamily(QStringLiteral("ADMUI3Lg"));
         font2.setPointSize(12);
         lineUserName->setFont(font2);
         labelHeader = new QLabel(TrainWidget);
         labelHeader->setObjectName(QStringLiteral("labelHeader"));
-        labelHeader->setGeometry(QRect(210, 120, 241, 231));
+        labelHeader->setGeometry(QRect(980, 0, 81, 91));
         btnLogout = new QPushButton(TrainWidget);
         btnLogout->setObjectName(QStringLiteral("btnLogout"));
-        btnLogout->setGeometry(QRect(520, 70, 91, 31));
+        btnLogout->setGeometry(QRect(1290, 50, 91, 31));
         QFont font3;
         font3.setPointSize(11);
         btnLogout->setFont(font3);
         btnReEdit = new QPushButton(TrainWidget);
         btnReEdit->setObjectName(QStringLiteral("btnReEdit"));
-        btnReEdit->setGeometry(QRect(370, 70, 91, 31));
+        btnReEdit->setGeometry(QRect(1140, 50, 91, 31));
         btnReEdit->setFont(font3);
 
         retranslateUi(TrainWidget);

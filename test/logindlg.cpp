@@ -41,6 +41,11 @@ LoginDlg::LoginDlg(QWidget *parent) :
         qDebug()<<"打开数据库错误";
         return;
     }
+    else{
+         QSqlQuery query(m_db);
+         QString sql=QString("create table UserInfo (username varchar(30), password varchar(30), headerpath varchar(100))");
+         query.exec(sql);
+    }
 }
 
 LoginDlg::~LoginDlg()

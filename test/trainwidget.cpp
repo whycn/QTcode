@@ -34,6 +34,7 @@ void TrainWidget::InitTrainWidget(QString username)
 
     QString select_info = QString("select * from UserInfo where username='%1'").arg(username);  // 在UserInfob表中找头像信息
     query.exec(select_info);
+    query.next();
     QString headerPath = query.value("headerpath").toString();
     if(!img->load(headerPath)){
         QMessageBox::warning(0,"错误",QString("头像图片打开失败，请确认图片在以下目录:%1").arg(headerPath));
